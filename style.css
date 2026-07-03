@@ -574,6 +574,13 @@ html, body {
 
     .hero {
         flex-direction: column;
+        height: auto;
+        padding-top: 60vh;
+    }
+
+    .hero-slider,
+    .hero-overlay {
+        height: 60vh;
     }
 
     .btn-side {
