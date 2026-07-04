@@ -1289,27 +1289,50 @@ html, body {
     }
 
     .mentoria-hero {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
         height: auto;
-        padding-top: 55vh;
+        padding-bottom: 24px;
     }
 
-    .mentoria-hero-image,
-    .mentoria-hero-overlay {
-        height: 55vh;
-    }
-
-    .mentoria-hero-content {
+    .mentoria-hero-image {
         position: static;
+        order: 1;
+        width: 45%;
         height: auto;
-        max-width: 100%;
-        margin-left: 0;
-        align-items: center;
-        text-align: center;
-        padding: 32px 6% 40px;
+        aspect-ratio: 3 / 4;
+        max-width: none;
+        margin: 0;
+    }
+
+    .mentoria-hero-overlay {
+        display: none;
+    }
+
+    .mentoria-hero-inner,
+    .mentoria-hero-content {
+        display: contents;
+    }
+
+    .mentoria-hero-text {
+        order: 2;
+        width: 55%;
+        padding: 0 0 0 16px;
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    .mentoria-hero-title {
+        font-size: 1.15rem;
     }
 
     .mentoria-hero-buttons {
+        order: 3;
+        width: 100%;
+        flex-basis: 100%;
         align-items: center;
+        margin-top: 20px;
     }
 
     .mentoria-btn {
@@ -1362,8 +1385,34 @@ html, body {
         padding: 50px 6%;
     }
 
-    .mentoria-final-agents {
+    .mentoria-final-image {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 24px;
+        margin: 0;
+    }
+
+    .mentoria-final-image img {
+        order: 2;
+        width: 100%;
+    }
+
+    .mentoria-final-agents {
+        position: static;
+        order: 1;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .mentoria-final-buttons {
+        position: static;
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
     }
 }
