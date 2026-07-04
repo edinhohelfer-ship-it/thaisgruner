@@ -295,6 +295,8 @@ html, body {
 .mentoria-hero-image {
     position: absolute;
     inset: 0;
+    max-width: 1400px;
+    margin: 0 auto;
     background-image: url('Mentoria Hero.png');
     background-size: cover;
     background-position: center;
@@ -304,6 +306,8 @@ html, body {
 .mentoria-hero-overlay {
     position: absolute;
     inset: 0;
+    max-width: 1400px;
+    margin: 0 auto;
     background: linear-gradient(
         to right,
         rgba(0,0,0,0) 30%,
