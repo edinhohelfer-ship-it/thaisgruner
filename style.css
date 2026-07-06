@@ -1230,6 +1230,10 @@ html, body {
         text-align: center;
     }
 
+    .btn {
+        margin-top: -5px;
+    }
+
     .hero-cta-topics {
         white-space: normal;
     }
@@ -1332,7 +1336,7 @@ html, body {
         width: 100%;
         flex-basis: 100%;
         align-items: center;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .mentoria-btn {
