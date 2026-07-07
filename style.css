@@ -1170,6 +1170,11 @@ html, body {
         text-align: center;
     }
 
+    .btn {
+        height: auto;
+        padding: 17.5px 46px;
+    }
+
     .btn-left .btn {
         margin-top: 10px;
         margin-bottom: 12px;
