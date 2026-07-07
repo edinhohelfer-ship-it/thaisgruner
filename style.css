@@ -1944,6 +1944,12 @@ html, body {
         display: flex;
     }
 
+    .consultoria-hero-badge-inline .consultoria-hero-badge-logo {
+        position: static;
+        max-width: 144px;
+        margin-bottom: 1rem;
+    }
+
     .consultoria-hero-text {
         position: absolute;
         left: 5%;
@@ -1954,7 +1960,7 @@ html, body {
     }
 
     .consultoria-hero-title {
-        font-size: 1.6rem;
+        font-size: 1.28rem;
     }
 
     .consultoria-hero-buttons {
