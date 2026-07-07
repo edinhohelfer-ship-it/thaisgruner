@@ -44,13 +44,7 @@
     </header>
 
     <main class="hero">
-        <div class="hero-slider">
-            <div class="hero-slide active" style="background-image: url('Slide 01 Novo.png');"></div>
-            <div class="hero-slide">
-                <video class="hero-video" src="Slide 02 Novo.mp4" autoplay muted loop playsinline></video>
-            </div>
-            <div class="hero-slide" style="background-image: url('Slide 03 Novo.png');"></div>
-        </div>
+        <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
         <div class="hero-inner">
             <div class="hero-cta btn-side btn-left">
@@ -94,14 +88,37 @@
         </div>
     </section>
 
-    <section class="about">
-        <div class="about-text">
-            <p class="about-kicker">QUEM É</p>
-            <h2 class="about-name">THAÍS GRÜNER</h2>
-            <p class="about-paragraph">Empreendedora e fascinada pelo ramo da beleza e estética, especializada em embelezamento do olhar, a primeira Artista Phi Lashes da Região dos Vales (RS) certificada internacionalmente pela Phi Academy – Phi Lashes (uma das maiores e mais conceituadas academias área de beleza e lash design do mundo), Terapeuta em Saúde dos Cílios, especialista em extensão de cílios segura com ênfase no aprimoramento de saúde ocular para lashes, promotora de saúde ocular e Visagista. Durante todos esses anos de atuação na área de Lash Design, me preparei muito e reuni os conceitos de estudo que mais me proporcionaram aprendizado e crescimento profissional para montar meu próprio curso e te passar todo o meu conhecimento em extensão de cílios, focado no altíssimo padrão de qualidade técnica e diferenciais de negócio.</p>
+    <section class="mentoria-about">
+        <div class="mentoria-about-text">
+            <p class="mentoria-about-kicker">Quem é</p>
+            <h2 class="mentoria-about-name">Thaís Grüner</h2>
+            <p class="mentoria-about-paragraph">Engenheira Civil por formação, empresária há 8 anos no ramo da beleza, com mais de 7500 atendimentos, 5 anos com equipe de excelência e mais de 30K em faturamento mensal somente com procedimentos de beleza.</p>
+            <p class="mentoria-about-paragraph">Expert em fidelização, atendimento encantador e atração de clientes high ticket.</p>
+            <p class="mentoria-about-paragraph">Fundadora do Studio Thaís Grüner (2018), criadora do maior Workshop Técnico Lash (VRPT/RS), palestrante e mentora de empreendedoras do ramo beauty. Criadora do Método Perfect Lashes e da Mentoria Impulse Beauty (MIB).</p>
         </div>
-        <div class="about-photo">
+        <div class="mentoria-about-photo">
             <img src="THAÍS.png" alt="Thaís Grüner">
+            <div class="mentoria-about-photo-caption">
+                <p class="mentoria-about-kicker">Quem é</p>
+                <h2 class="mentoria-about-name">Thaís Grüner</h2>
+            </div>
+            <div class="mentoria-about-stats">
+                <div class="mentoria-about-card">
+                    <span class="mentoria-about-card-number-row">
+                        <span class="mentoria-about-card-number">10</span>
+                        <span class="mentoria-about-card-unit">anos</span>
+                    </span>
+                    <p class="mentoria-about-card-label">EXPERTISE NO MERCADO BEAUTY</p>
+                </div>
+                <div class="mentoria-about-card">
+                    <span class="mentoria-about-card-number mentoria-about-card-number--sm">+7500</span>
+                    <p class="mentoria-about-card-label">ATENDIMENTOS REALIZADOS</p>
+                </div>
+                <div class="mentoria-about-card">
+                    <span class="mentoria-about-card-number mentoria-about-card-number--sm">+30K</span>
+                    <p class="mentoria-about-card-label">FATURAMENTO MENSAL COM ATENDIMENTOS</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -149,16 +166,6 @@
     </footer>
 
     <script>
-        (function () {
-            var slides = document.querySelectorAll('.hero-slide');
-            var current = 0;
-            setInterval(function () {
-                slides[current].classList.remove('active');
-                current = (current + 1) % slides.length;
-                slides[current].classList.add('active');
-            }, 5000);
-        })();
-
         (function () {
             var cards = document.querySelectorAll('.testimonial-card');
             var current = 0;

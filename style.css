@@ -112,30 +112,13 @@ html, body {
     justify-content: center;
 }
 
-.hero-slider {
+.hero-bg {
     position: absolute;
     inset: 0;
-    overflow: hidden;
-}
-
-.hero-slide {
-    position: absolute;
-    inset: 0;
+    background-image: url('Slide 01 Novo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0;
-    transition: opacity 1.5s ease;
-}
-
-.hero-slide.active {
-    opacity: 1;
-}
-
-.hero-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .hero-overlay {
@@ -673,6 +656,13 @@ html, body {
     padding: 0 80px 0 60px;
 }
 
+.mentoria-about-kicker {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
 .mentoria-about-name {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
@@ -697,6 +687,10 @@ html, body {
 .mentoria-about-photo {
     position: relative;
     overflow: visible;
+}
+
+.mentoria-about-photo-caption {
+    display: none;
 }
 
 .mentoria-about-photo img {
@@ -724,6 +718,10 @@ html, body {
     border: 1px solid rgba(204, 177, 158, 0.4);
     border-radius: 12px;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     animation: card-glow 3s ease-in-out infinite;
 }
@@ -735,6 +733,12 @@ html, body {
     50% {
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(204, 177, 158, 0.35);
     }
+}
+
+.mentoria-about-card-number-row {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
 }
 
 .mentoria-about-card-number {
@@ -767,7 +771,7 @@ html, body {
 .testimonials {
     position: relative;
     background-color: #CCB19E;
-    padding: 55px 5% 65px;
+    padding: 25px 5% 65px;
     text-align: center;
 }
 
@@ -807,7 +811,6 @@ html, body {
     justify-content: center;
     gap: 26px;
     padding: 48px 44px;
-    border: 1px solid rgba(217, 174, 139, 0.45);
     border-radius: 4px;
 }
 
@@ -1007,70 +1010,6 @@ html, body {
     gap: 16px;
 }
 
-/* ---------- Quem é Thaís ---------- */
-.about {
-    background-color: #000;
-    display: grid;
-    grid-template-columns: 55% 45%;
-    align-items: stretch;
-    gap: 0;
-    padding: 25px 0 25px 5%;
-    min-height: 0;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.about-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 4px;
-    padding-right: 3rem;
-}
-
-.about-kicker {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    font-size: 18px;
-    letter-spacing: 2px;
-    margin-bottom: 12px;
-}
-
-.about-name {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #CCB19E;
-    font-size: 41.6px;
-    line-height: 1.15;
-    margin-bottom: 28px;
-}
-
-.about-paragraph {
-    font-family: 'Montserrat', sans-serif;
-    color: #FFFFFF;
-    font-size: 12.75px;
-    line-height: 1.9;
-    font-weight: 400;
-}
-
-.about-photo {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    min-height: 0;
-    overflow: hidden;
-}
-
-.about-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-}
-
 /* ---------- Diagnóstico CTA ---------- */
 .cta-diagnostic {
     background-color: #CCB19E;
@@ -1213,9 +1152,10 @@ html, body {
         flex-direction: column;
         height: auto;
         padding-top: 60vh;
+        padding-bottom: 32px;
     }
 
-    .hero-slider,
+    .hero-bg,
     .hero-overlay {
         height: 60vh;
     }
@@ -1230,8 +1170,13 @@ html, body {
         text-align: center;
     }
 
-    .btn {
-        margin-top: -5px;
+    .btn-left .btn {
+        margin-top: 10px;
+        margin-bottom: 12px;
+    }
+
+    .btn-right .btn {
+        margin-top: 4px;
     }
 
     .hero-cta-topics {
@@ -1239,7 +1184,7 @@ html, body {
     }
 
     .testimonials {
-        padding: 40px 6% 45px;
+        padding: 18px 6% 45px;
     }
 
     .testimonial-carousel {
@@ -1256,27 +1201,6 @@ html, body {
 
     .testimonial-arrow-right {
         right: 6px;
-    }
-
-    .about {
-        grid-template-columns: 1fr;
-        padding: 15px 6%;
-        gap: 8px;
-    }
-
-    .about-text {
-        padding-right: 0;
-    }
-
-    .about-name {
-        font-size: 28.8px;
-    }
-
-    .about-photo {
-        order: -1;
-        height: auto;
-        width: 100%;
-        aspect-ratio: 16 / 9;
     }
 
     .cta-diagnostic {
@@ -1364,6 +1288,28 @@ html, body {
         padding: 0;
     }
 
+    .mentoria-about-text > .mentoria-about-kicker,
+    .mentoria-about-text > .mentoria-about-name {
+        display: none;
+    }
+
+    .mentoria-about-photo-caption {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 74px;
+        left: 5%;
+        z-index: 2;
+    }
+
+    .mentoria-about-photo-caption .mentoria-about-kicker {
+        font-size: 1.28rem;
+    }
+
+    .mentoria-about-photo-caption .mentoria-about-name {
+        font-size: 2rem;
+    }
+
     .mentoria-about-photo {
         order: 1;
         overflow: hidden;
@@ -1378,11 +1324,47 @@ html, body {
         position: static;
         left: auto;
         top: auto;
-        transform: none;
+        transform: translateX(48.75px);
+        height: auto;
+        margin-top: -30px;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 20px;
+    }
+
+    .mentoria-about-card {
+        width: 75px;
+        height: 75px;
+    }
+
+    .mentoria-about-card-number {
+        font-size: 1.5rem;
+    }
+
+    .mentoria-about-card-number--sm {
+        font-size: 1.2rem;
+    }
+
+    .mentoria-about-card-unit {
+        font-size: 0.75rem;
+    }
+
+    .mentoria-about-card-label {
+        font-size: 6px;
+    }
+
+    .mentoria-about-card:nth-child(1) {
+        position: relative;
+        z-index: 1;
+        transform: translate(40%, -10%);
+    }
+
+    .mentoria-about-card:nth-child(2) {
+        transform: translateX(20%);
+    }
+
+    .mentoria-about-card:nth-child(3) {
+        transform: translateY(-15%);
     }
 
     .mentoria-final {
