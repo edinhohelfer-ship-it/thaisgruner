@@ -1310,7 +1310,7 @@ html, body {
         display: flex;
         flex-direction: column;
         position: absolute;
-        bottom: 74px;
+        bottom: 89.36px;
         left: 5%;
         z-index: 2;
     }
@@ -1337,43 +1337,42 @@ html, body {
         position: static;
         left: auto;
         top: auto;
-        transform: translateX(48.75px);
+        transform: none;
         height: auto;
         margin-top: -30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
 
     .mentoria-about-card {
-        width: 75px;
-        height: 75px;
+        width: 90px;
+        height: 90px;
     }
 
     .mentoria-about-card-number {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .mentoria-about-card-number--sm {
-        font-size: 1.2rem;
+        font-size: 1.44rem;
     }
 
     .mentoria-about-card-unit {
-        font-size: 0.75rem;
+        font-size: 0.9rem;
     }
 
     .mentoria-about-card-label {
-        font-size: 6px;
+        font-size: 7.2px;
     }
 
     .mentoria-about-card:nth-child(1) {
         position: relative;
         z-index: 1;
-        transform: translate(40%, -10%);
-    }
-
-    .mentoria-about-card:nth-child(2) {
-        transform: translateX(20%);
+        transform: translateY(-10%);
     }
 
     .mentoria-about-card:nth-child(3) {
