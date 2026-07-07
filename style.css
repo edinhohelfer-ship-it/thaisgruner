@@ -751,6 +751,14 @@ html, body {
     z-index: 0;
 }
 
+.bonus-bg-desktop {
+    display: block;
+}
+
+.bonus-bg-mobile {
+    display: none;
+}
+
 .consultoria-bonus-content {
     position: relative;
     z-index: 2;
@@ -862,6 +870,24 @@ html, body {
     flex-direction: row;
     justify-content: center;
     gap: 14px;
+}
+
+.consultoria-line-separator {
+    height: 2px;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 2px;
+    background: linear-gradient(to right, transparent, #CCB19E, transparent);
+    animation: line-pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes line-pulse {
+    0%, 100% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 1;
+    }
 }
 
 /* ---------- Mentoria Statement ---------- */
@@ -1933,6 +1959,14 @@ html, body {
     }
 
     .hero-img-mobile {
+        display: block;
+    }
+
+    .bonus-bg-desktop {
+        display: none;
+    }
+
+    .bonus-bg-mobile {
         display: block;
     }
 
