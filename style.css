@@ -1937,16 +1937,11 @@ html, body {
     }
 
     .consultoria-hero-badge-overlay {
-        display: flex;
-    }
-
-    .consultoria-hero-badge-inline {
         display: none;
     }
 
-    .consultoria-hero-badge-overlay .consultoria-hero-badge-logo {
-        width: auto;
-        max-width: 180px;
+    .consultoria-hero-badge-inline {
+        display: flex;
     }
 
     .consultoria-hero-text {
