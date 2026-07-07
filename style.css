@@ -2011,6 +2011,14 @@ html, body {
         width: 100%;
     }
 
+    .consultoria-technique-phrase {
+        font-size: 1.5rem;
+    }
+
+    .consultoria-bonus-title {
+        font-size: 1.6rem;
+    }
+
     .consultoria-benefits-grid {
         grid-template-columns: 1fr;
     }
