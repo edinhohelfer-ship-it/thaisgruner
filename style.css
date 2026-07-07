@@ -2019,6 +2019,10 @@ html, body {
         font-size: 1.6rem;
     }
 
+    .consultoria-bonus {
+        padding-top: 40px;
+    }
+
     .consultoria-benefits-grid {
         grid-template-columns: 1fr;
     }
