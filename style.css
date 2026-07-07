@@ -1413,4 +1413,24 @@ html, body {
         align-items: center;
         gap: 12px;
     }
+
+    .mentoria-final-subtitle-prefix {
+        display: none;
+    }
+
+    .mentoria-final-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .mentoria-statement-text {
+        font-size: 1.4rem;
+    }
+
+    .mentoria-statement {
+        padding: 41.65px 5%;
+    }
+
+    .mentoria-audience-title {
+        font-size: 1rem;
+    }
 }
