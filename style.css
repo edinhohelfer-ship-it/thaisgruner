@@ -1170,6 +1170,14 @@ html, body {
         text-align: center;
     }
 
+    .btn-left {
+        transform: translateY(-127px);
+    }
+
+    .btn-right {
+        transform: translateY(-127px);
+    }
+
     .btn {
         height: auto;
         padding: 17.5px 46px;
