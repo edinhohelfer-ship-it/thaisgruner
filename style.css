@@ -400,7 +400,7 @@ html, body {
     margin-top: var(--header-height);
     min-height: calc(100vh - var(--header-height));
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .consultoria-hero-inner {
@@ -413,7 +413,7 @@ html, body {
     align-items: center;
     column-gap: 60px;
     row-gap: 0;
-    padding: 60px 5%;
+    padding: 24px 5% 60px;
 }
 
 .consultoria-hero-text {
@@ -516,6 +516,94 @@ html, body {
 
 .hero-img-mobile {
     display: none;
+}
+
+/* ---------- Consultoria Técnica (Seção 2) ---------- */
+.consultoria-technique {
+    background-color: #000;
+    padding: 100px 5%;
+}
+
+.consultoria-technique-frame {
+    position: relative;
+    border: 2px solid rgba(204, 177, 158, 0.5);
+    border-radius: 4px;
+    padding: 1.5rem 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.consultoria-technique-frame::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, rgba(204, 177, 158, 0.7) 0%, rgba(204, 177, 158, 0.2) 40%, transparent 70%);
+    animation: consultoria-flare-pulse 3s ease-in-out infinite;
+}
+
+@keyframes consultoria-flare-pulse {
+    0%, 100% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+}
+
+.consultoria-technique-phrase {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: #CCB19E;
+    font-size: 2.2rem;
+}
+
+.consultoria-technique-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    opacity: 0.8;
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 32px auto 0;
+    text-align: center;
+}
+
+.consultoria-benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 900px;
+    margin: 56px auto 0;
+}
+
+.consultoria-benefit {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.consultoria-benefit-circle {
+    border: 1px solid #CCB19E;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.consultoria-benefit-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: #FFFFFF;
+    opacity: 0.8;
+    font-size: 12px;
+    line-height: 1.6;
 }
 
 /* ---------- Mentoria Statement ---------- */
@@ -1612,5 +1700,9 @@ html, body {
 
     .consultoria-btn {
         width: 100%;
+    }
+
+    .consultoria-benefits-grid {
+        grid-template-columns: 1fr;
     }
 }
