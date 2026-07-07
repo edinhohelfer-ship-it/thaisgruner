@@ -1265,7 +1265,7 @@ html, body {
         padding: 0 0 0 16px;
         box-sizing: border-box;
         text-align: left;
-        transform: translateY(100%);
+        transform: translateY(calc(100% - 72px));
     }
 
     .mentoria-hero-title {
@@ -1278,6 +1278,7 @@ html, body {
         flex-basis: 100%;
         align-items: center;
         margin-top: 10px;
+        transform: translateY(-72px);
     }
 
     .mentoria-btn {
