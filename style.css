@@ -1942,25 +1942,28 @@ html, body {
 
     .consultoria-hero-badge-inline {
         display: flex;
+        margin-bottom: 8px;
     }
 
     .consultoria-hero-badge-inline .consultoria-hero-badge-logo {
         position: static;
         max-width: 144px;
-        margin-bottom: 1rem;
+        margin-bottom: 6px;
     }
 
     .consultoria-hero-text {
         position: absolute;
         left: 5%;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 0;
+        padding-top: 20px;
+        transform: none;
         max-width: 55%;
         z-index: 2;
     }
 
     .consultoria-hero-title {
         font-size: 1.28rem;
+        margin-bottom: 10px;
     }
 
     .consultoria-hero-buttons {
