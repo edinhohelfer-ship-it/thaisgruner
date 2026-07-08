@@ -602,31 +602,53 @@ html, body {
     align-items: flex-start;
 }
 
+.tricologia-hero-logo-wrap {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
 .tricologia-hero-logo {
     display: block;
-    max-width: 160px;
+    max-width: 208px;
     width: 100%;
     height: auto;
     margin-bottom: 24px;
 }
 
+.tricologia-hero-title-spacer {
+    height: 100px;
+}
+
+.tricologia-hero-title-wrap {
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+    top: calc(2.5rem + 5vh);
+    z-index: 2;
+}
+
 .tricologia-hero-title {
     font-family: 'Playfair Display', serif;
-    font-weight: 700;
+    font-weight: 300;
     color: #FFFFFF;
-    font-size: 3rem;
-    letter-spacing: 2px;
+    font-size: 4rem;
+    letter-spacing: 4px;
     line-height: 1.1;
+    text-align: left;
+    white-space: nowrap;
 }
 
 .tricologia-hero-subtitle {
     font-family: 'Playfair Display', serif;
-    font-weight: 700;
+    font-weight: 300;
     color: #FFFFFF;
-    font-size: 2rem;
-    letter-spacing: 2px;
+    font-size: 4rem;
+    letter-spacing: 4px;
     line-height: 1.1;
     margin-bottom: 14px;
+    text-align: left;
+    white-space: nowrap;
 }
 
 .tricologia-hero-tagline {
@@ -635,6 +657,9 @@ html, body {
     color: #CCB19E;
     font-size: 1rem;
     margin-bottom: 20px;
+    padding-left: 5%;
+    white-space: nowrap;
+    transform: translateY(-3vh);
 }
 
 .tricologia-hero-text {
@@ -2522,6 +2547,10 @@ html, body {
         margin-left: auto;
         margin-top: -43vh;
         padding: 0.5rem 1rem 1.25rem;
+    }
+
+    .tricologia-hero-logo {
+        max-width: 128px;
     }
 
     .tricologia-hero-cta-block {
