@@ -565,9 +565,11 @@ html, body {
 /* ---------- Tricologia Hero ---------- */
 .tricologia-hero {
     position: relative;
-    margin: var(--header-height) 0 0;
+    margin-top: var(--header-height);
     padding: 0;
-    height: calc((100vh - var(--header-height)) * 0.8);
+    min-height: calc(85vh - var(--header-height));
+    display: flex;
+    align-items: flex-start;
     overflow: hidden;
 }
 
@@ -729,7 +731,9 @@ html, body {
     position: relative;
     width: 100%;
     margin-top: var(--header-height);
-    min-height: calc(100vh - var(--header-height));
+    min-height: calc(85vh - var(--header-height));
+    display: flex;
+    align-items: flex-start;
     overflow: hidden;
 }
 
@@ -758,10 +762,10 @@ html, body {
     z-index: 3;
     width: 100%;
     max-width: 1400px;
-    min-height: calc(100vh - var(--header-height));
+    min-height: calc(85vh - var(--header-height));
     margin: 0 auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-end;
 }
 
