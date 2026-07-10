@@ -893,6 +893,438 @@ html, body {
     background-color: #000000;
 }
 
+/* ---------- Para Quem (landing-operacao-impulse) ---------- */
+.paraquem {
+    position: relative;
+    overflow: hidden;
+    padding: 70px 5%;
+}
+
+.paraquem-bg {
+    position: absolute;
+    inset: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    z-index: 0;
+    background-image: url('opimpulse-secao3-praqueme.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.paraquem-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.paraquem-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #CCB19E;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.paraquem-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #F2E4D8;
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 720px;
+    margin-bottom: 40px;
+}
+
+.paraquem-text strong {
+    font-weight: 500;
+}
+
+.paraquem-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.paraquem-card {
+    background: #000000;
+    border-radius: 0;
+    border-top: 4px solid #323139;
+    border-bottom: 4px solid #323139;
+    border-left: 4px solid #7b4420;
+    border-right: 1px solid #323139;
+    padding: 18px 20px;
+}
+
+.paraquem-card-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.paraquem-card-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: #CCB19E;
+    font-size: 12px;
+}
+
+/* ---------- Impulse Result (landing-operacao-impulse) ---------- */
+.impulse-result {
+    background-color: #000000;
+    padding: 70px 5%;
+}
+
+.impulse-result-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.impulse-result-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 26px;
+    line-height: 1.3;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 24px;
+}
+
+.impulse-result-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #CCB19E;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: left;
+    max-width: 640px;
+    margin: 0 auto 20px;
+}
+
+.impulse-result-highlight {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: #F2E4D8;
+    font-size: 15px;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 48px;
+}
+
+.impulse-result-icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: 960px;
+    margin: 0 auto 48px;
+}
+
+.impulse-result-icon-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.impulse-result-icon-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #222222;
+    border: 1px dashed #7b4420;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #CCB19E;
+    margin-bottom: 14px;
+}
+
+.impulse-result-icon-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.impulse-result-icon-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: #CCB19E;
+    font-size: 11px;
+}
+
+.impulse-result-cta {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* ---------- Por Dentro (landing-operacao-impulse) ---------- */
+.porDentro {
+    position: relative;
+    overflow: hidden;
+    padding: 70px 5%;
+}
+
+.porDentro-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-color: #FFFFFF;
+    /* IMAGEM DE FUNDO AQUI (notebook): substituir por
+       background-image: url('NOME-DO-ARQUIVO.png');
+       background-size: cover;
+       background-position: center; */
+}
+
+.porDentro-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.porDentro-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #111111;
+    font-size: 24px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+.porDentro-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #444444;
+    font-size: 13px;
+    line-height: 1.7;
+    max-width: 720px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+}
+
+.porDentro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 24px;
+}
+
+.porDentro-card {
+    position: relative;
+    background: #7b4420;
+    border-radius: 0;
+    border-left: 4px solid #000000;
+    border-right: 4px solid #000000;
+    border-top: 4px solid #000000;
+    border-bottom: 1px solid #000000;
+    padding: 24px 20px 18px;
+}
+
+.porDentro-badge {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #000000;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.porDentro-card-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.porDentro-card-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: #F2E4D8;
+    font-size: 12px;
+    text-align: center;
+}
+
+.porDentro-support {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 36px;
+    margin-left: 32vw;
+    border-left: 3px solid #3D2010;
+    padding: 24px 0 24px 20px;
+}
+
+.porDentro-support-line1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #111111;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.porDentro-support-line2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #444444;
+    font-size: 13px;
+    white-space: nowrap;
+    margin-top: 6px;
+}
+
+/* ---------- Resultados (landing-operacao-impulse) ---------- */
+.resultados {
+    position: relative;
+    overflow: hidden;
+    padding: 3rem 5%;
+}
+
+.resultados-bg {
+    position: absolute;
+    inset: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    z-index: 0;
+    background-image: url('operacaoimpulse-resultadosreais.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.resultados-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.resultados-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 26px;
+    text-align: center;
+}
+
+.resultados-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: #CCB19E;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 6px;
+}
+
+/* ---------- Quem Te Guia (landing-operacao-impulse) ---------- */
+.quemteguia {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.quemteguia-bg {
+    position: absolute;
+    inset: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    z-index: 0;
+    background-image: url('operacaoimpulse-quemethais.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.quemteguia-inner {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1400px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.quemteguia-content {
+    max-width: 440px;
+    margin-left: 0;
+    padding: 60px 6% 60px 40px;
+    text-align: left;
+}
+
+.quemteguia-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.quemteguia-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #F2E4D8;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.quemteguia-text strong {
+    font-weight: 500;
+}
+
+/* ---------- Preço / CTA Final (landing-operacao-impulse) ---------- */
+.preco {
+    background-color: #FFFFFF;
+    padding: 70px 5%;
+}
+
+.preco-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #111111;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.preco-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.preco-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.preco-btn {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #CCB19E;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 14px 40px;
+}
+
 /* ---------- Tricologia Divider ---------- */
 .tricologia-divider {
     background-color: #323139;
@@ -2925,5 +3357,45 @@ html, body {
 
     .impulse-goals-col-right {
         justify-content: flex-start;
+    }
+
+    .paraquem-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .impulse-result-icons {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .porDentro-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .porDentro-support {
+        margin-left: 4vw;
+    }
+
+    .porDentro-support-line1,
+    .porDentro-support-line2 {
+        white-space: normal;
+    }
+
+    .quemteguia {
+        min-height: 100vh;
+    }
+
+    .quemteguia-bg {
+        background-position: right top;
+    }
+
+    .quemteguia-inner {
+        min-height: 100vh;
+    }
+
+    .quemteguia-content {
+        max-width: 100%;
+        padding: 40px 24px;
     }
 }
