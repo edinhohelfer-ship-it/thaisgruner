@@ -736,17 +736,19 @@ html, body {
 .impulse-hero-bg {
     position: absolute;
     inset: 0;
+    max-width: 1400px;
+    margin: 0 auto;
     z-index: 1;
-    background-color: #1a1a1a;
-    /* IMAGEM DE FUNDO AQUI: substituir por
-       background-image: url('NOME-DO-ARQUIVO.png');
-       background-size: cover;
-       background-position: center; */
+    background-image: url('hero-operacao-impulse.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .impulse-hero-overlay {
     position: absolute;
     inset: 0;
+    max-width: 1400px;
+    margin: 0 auto;
     z-index: 2;
     background: rgba(0, 0, 0, 0.4);
 }
@@ -804,6 +806,91 @@ html, body {
 
 .impulse-hero-cta {
     margin-left: auto;
+}
+
+/* ---------- Impulse Goals (landing-operacao-impulse) ---------- */
+.impulse-goals {
+    background-color: #000000;
+    padding: 70px 5%;
+}
+
+.impulse-goals-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.impulse-goals-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #CCB19E;
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+.impulse-goals-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.impulse-goals-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.impulse-goals-col-right {
+    justify-content: center;
+}
+
+.impulse-goal-card {
+    position: relative;
+    background: linear-gradient(120deg, #7b4420, #000000);
+    border-radius: 4px;
+    padding: 20px 24px;
+}
+
+.impulse-goal-card-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.impulse-goal-card-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: #F2E4D8;
+}
+
+.impulse-goal-offset {
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    bottom: -3px;
+    width: 7px;
+    border: 1px solid #CCB19E;
+    border-right: none;
+    border-radius: 7px 0 0 7px;
+}
+
+@keyframes shimmerMove {
+    0% { mask-position: 0 -120%; -webkit-mask-position: 0 -120%; }
+    100% { mask-position: 0 220%; -webkit-mask-position: 0 220%; }
+}
+
+.offset-glow {
+    mask-image: linear-gradient(to bottom, transparent, black, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black, transparent);
+    mask-size: 100% 260%;
+    -webkit-mask-size: 100% 260%;
+    animation: shimmerMove 7s linear infinite;
+}
+
+.impulse-divider-wrap {
+    padding: 56px 0;
+    background-color: #000000;
 }
 
 /* ---------- Tricologia Divider ---------- */
@@ -2830,5 +2917,13 @@ html, body {
 
     .impulse-hero-cta {
         margin: 0 auto;
+    }
+
+    .impulse-goals-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .impulse-goals-col-right {
+        justify-content: flex-start;
     }
 }
