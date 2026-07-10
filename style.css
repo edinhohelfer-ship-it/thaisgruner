@@ -271,7 +271,9 @@ html, body {
     position: relative;
     width: 100%;
     margin-top: var(--header-height);
-    height: calc(100vh - var(--header-height));
+    min-height: calc(85vh - var(--header-height));
+    display: flex;
+    align-items: flex-start;
     overflow: hidden;
 }
 
