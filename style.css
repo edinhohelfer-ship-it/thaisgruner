@@ -1034,8 +1034,8 @@ html, body {
 }
 
 .impulse-result-icon-circle {
-    width: 48px;
-    height: 48px;
+    width: 72px;
+    height: 72px;
     border-radius: 50%;
     background: #222222;
     border: 1px dashed #7b4420;
@@ -1196,7 +1196,11 @@ html, body {
 .resultados {
     position: relative;
     overflow: hidden;
-    padding: 3rem 5%;
+    padding: 70px 5%;
+    min-height: 610px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .resultados-bg {
@@ -1238,7 +1242,7 @@ html, body {
 .quemteguia {
     position: relative;
     overflow: hidden;
-    min-height: 100vh;
+    min-height: 610px;
 }
 
 .quemteguia-bg {
@@ -1257,7 +1261,7 @@ html, body {
     z-index: 1;
     width: 100%;
     max-width: 1400px;
-    min-height: 100vh;
+    min-height: 610px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -1292,23 +1296,40 @@ html, body {
 
 /* ---------- Preço / CTA Final (landing-operacao-impulse) ---------- */
 .preco {
-    background-color: #FFFFFF;
-    padding: 70px 5%;
+    position: relative;
+    overflow: hidden;
+    height: 334px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+    background-image: url('operacaoimpulse-ctaepreco.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .preco-title {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
     font-family: 'Playfair Display', serif;
     font-weight: 500;
     color: #111111;
     font-size: 26px;
     text-align: center;
-    margin-bottom: 28px;
+    padding: 0 5%;
 }
 
-.preco-container {
-    position: relative;
-    max-width: 600px;
-    margin: 0 auto;
+.preco .tricologia-price-btn {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.preco .tricologia-price-btn:hover {
+    transform: translateX(-50%) translateY(-2px);
 }
 
 .preco-img {
@@ -3499,5 +3520,9 @@ html, body {
 
     .impulse-final-cta-block {
         margin-top: 48px;
+    }
+
+    .resultados {
+        min-height: 400px;
     }
 }
