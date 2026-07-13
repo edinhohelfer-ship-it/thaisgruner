@@ -3442,17 +3442,17 @@ html, body {
     }
 
     .impulse-hero {
-        min-height: 100vh;
+        min-height: 54vh;
     }
 
     .impulse-hero-inner {
-        min-height: 100vh;
+        min-height: 54vh;
         justify-content: center;
     }
 
     .impulse-hero-content {
         max-width: 100%;
-        padding-top: 220px;
+        padding-top: 200px;
         padding-left: 24px;
         padding-right: 24px;
         padding-bottom: 40px;
