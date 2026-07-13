@@ -1336,12 +1336,6 @@ html, body {
     transform: translateX(-50%) translateY(-2px);
 }
 
-.preco-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 /* ---------- Impulse Final (landing-operacao-impulse) ---------- */
 .impulse-final {
     position: relative;
@@ -1671,7 +1665,6 @@ html, body {
 .preco-img {
     width: 100%;
     height: auto;
-    display: block;
 }
 
 .tricologia-price-btn {
@@ -1695,6 +1688,49 @@ html, body {
 }
 
 .tricologia-price-btn:hover {
+    opacity: 0.85;
+    transform: translateX(-50%) translateY(-2px);
+}
+
+/* ---------- Saúde Ocular Preço (exclusiva, não compartilhada com Tricologia) ---------- */
+.saudeocular-price {
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.saudeocular-price-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    aspect-ratio: 1366 / 761.25;
+}
+
+.saudeocular-preco-img {
+    width: 100%;
+    height: auto;
+}
+
+.saudeocular-price-btn {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #CCB19E;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 12px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.saudeocular-price-btn:hover {
     opacity: 0.85;
     transform: translateX(-50%) translateY(-2px);
 }
