@@ -745,7 +745,7 @@ html, body {
     max-width: 1400px;
     margin: 0 auto;
     z-index: 1;
-    background-image: url('hero-operacao-impulse.png');
+    background-image: url('imagens-operacaoimpulse/hero-operacaoimpulse-desktop.png');
     background-size: cover;
     background-position: center;
 }
@@ -3443,6 +3443,10 @@ html, body {
 
     .impulse-hero {
         min-height: 54vh;
+    }
+
+    .impulse-hero-bg {
+        background-image: url('imagens-operacaoimpulse/hero-operacaoimpulse-mobile.png');
     }
 
     .impulse-hero-inner {
