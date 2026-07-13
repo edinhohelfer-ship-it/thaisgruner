@@ -115,7 +115,7 @@ html, body {
 .hero-bg {
     position: absolute;
     inset: 0;
-    background-image: url('Slide 01 Novo.png');
+    background-image: url('imagens-home/heromenu-desktop.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -282,7 +282,7 @@ html, body {
     inset: 0;
     max-width: 1400px;
     margin: 0 auto;
-    background-image: url('Mentoria Hero.png');
+    background-image: url('imagens-mentoria/heromentoria-desktop.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2652,7 +2652,6 @@ html, body {
 }
 
 .mentoria-final-image img {
-    display: block;
     width: 100%;
     max-width: none;
     margin: 0;
@@ -2957,6 +2956,10 @@ html, body {
         height: 60vh;
     }
 
+    .hero-bg {
+        background-image: url('imagens-home/heromenu-mobile.png');
+    }
+
     .btn-side {
         position: static;
         transform: none;
@@ -3042,6 +3045,7 @@ html, body {
         aspect-ratio: 3 / 4;
         max-width: none;
         margin: 0;
+        background-image: url('imagens-mentoria/heromentoria-mobile.png');
     }
 
     .mentoria-hero-overlay {
