@@ -1046,6 +1046,13 @@ html, body {
     margin-bottom: 14px;
 }
 
+.impulse-result-icon-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 .impulse-result-icon-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -2014,7 +2021,6 @@ html, body {
 }
 
 .consultoria-bonus-card-img {
-    display: block;
     width: 100%;
     height: 200px;
     border: 1px solid rgba(204, 177, 158, 0.3);
@@ -3459,11 +3465,11 @@ html, body {
     }
 
     .perfect-lashes-featured {
-        height: 196px;
+        height: 80px;
     }
 
     .perfect-lashes-card {
-        height: 126px;
+        height: 80px;
     }
 
     .perfect-lashes-top-title {
