@@ -1306,7 +1306,7 @@ html, body {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0;
-    background-image: url('operacaoimpulse-ctaepreco.png');
+    background-image: url('imagens-operacaoimpulse/ctaepreco-operacaoimpulse-desktop.png');
     background-size: cover;
     background-position: center;
 }
@@ -3554,21 +3554,46 @@ html, body {
     }
 
     .quemteguia {
-        min-height: 100vh;
+        height: 728px;
+        overflow: hidden;
+        position: relative;
     }
 
     .quemteguia-bg {
         background-image: url('imagens-operacaoimpulse/quemethais-operacaoimpulse-mobile.png');
-        background-position: right top;
+        background-size: cover;
+        background-position: center;
     }
 
     .quemteguia-inner {
-        min-height: 100vh;
+        position: absolute;
+        inset: 0;
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
     }
 
     .quemteguia-content {
-        max-width: 100%;
-        padding: 40px 24px;
+        max-width: 90%;
+        margin-left: 0;
+        padding: 80px 24px 40px;
+    }
+
+    .quemteguia-text {
+        font-size: 14px;
+    }
+
+    .quemteguia-title {
+        font-size: 28px;
+    }
+
+    .preco {
+        background-image: url('imagens-operacaoimpulse/ctaepreco-operacaoimpulse-mobile.png');
+    }
+
+    .preco-title-line1 {
+        font-size: 20px;
+        display: inline-block;
     }
 
     .impulse-final-bubbles {
