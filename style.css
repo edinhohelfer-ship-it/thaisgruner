@@ -2855,6 +2855,8 @@ html, body {
     max-width: 1400px;
     margin: 0 auto;
     background: linear-gradient(to right, transparent, #CCB19E, transparent);
+    border-radius: 2px;
+    animation: line-pulse 2.5s ease-in-out infinite;
 }
 
 .perfect-lashes-courses {
