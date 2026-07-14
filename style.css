@@ -3031,6 +3031,14 @@ html, body {
         text-align: center;
     }
 
+    .hero-cta.btn-left {
+        margin: 260px auto 0;
+    }
+
+    .hero-cta.btn-right {
+        margin-top: 0;
+    }
+
     .btn {
         height: auto;
         padding: 17.5px 46px;
@@ -3042,12 +3050,41 @@ html, body {
     }
 
     .btn-right .btn {
-        margin-top: 10px;
-        margin-bottom: 12px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .hero-cta-topics {
         white-space: normal;
+    }
+
+    .btn-right .hero-cta-topics {
+        position: absolute;
+        bottom: 105px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-right .hero-cta-title {
+        position: absolute;
+        bottom: 119px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-right .hero-cta-divider {
+        position: absolute;
+        bottom: 118px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .testimonials {
