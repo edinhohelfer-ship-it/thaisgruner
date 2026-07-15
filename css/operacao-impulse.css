@@ -1,0 +1,865 @@
+/* ============================================================
+   operacao-impulse.css - Exclusivo de landing-operacao-impulse.html
+   ============================================================ */
+
+
+/* ---------- Impulse Hero (landing-operacao-impulse) ---------- */
+.impulse-hero {
+    position: relative;
+    width: 100%;
+    margin-top: var(--header-height);
+    min-height: calc(85vh - var(--header-height));
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.impulse-hero-bg {
+    position: absolute;
+    inset: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    z-index: 1;
+    background-image: url('../imagens-operacaoimpulse/hero-operacaoimpulse-desktop.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.impulse-hero-overlay {
+    position: absolute;
+    inset: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.impulse-hero-inner {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    max-width: 1400px;
+    min-height: calc(85vh - var(--header-height));
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.impulse-hero-content {
+    width: 100%;
+    max-width: 480px;
+    padding: 60px 6% 60px 40px;
+    text-align: right;
+}
+
+.impulse-hero-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: clamp(1.7rem, 3vw, 2.125rem);
+    letter-spacing: 3px;
+    line-height: 1.25;
+    margin-bottom: 16px;
+}
+
+.impulse-hero-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: clamp(1.15rem, 2vw, 1.375rem);
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.impulse-hero-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #CCB19E;
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 480px;
+    margin: 0 0 32px auto;
+}
+
+.impulse-hero-text strong {
+    font-weight: 500;
+}
+
+.impulse-hero-cta {
+    margin-left: auto;
+}
+
+/* ---------- Impulse Goals (landing-operacao-impulse) ---------- */
+.impulse-goals {
+    background-color: #000000;
+    padding: 70px 5%;
+}
+
+.impulse-goals-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.impulse-goals-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #CCB19E;
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+.impulse-goals-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.impulse-goals-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.impulse-goals-col-right {
+    justify-content: center;
+}
+
+.impulse-goal-card {
+    position: relative;
+    background: linear-gradient(120deg, #7b4420, #000000);
+    border-radius: 4px;
+    padding: 20px 24px;
+}
+
+.impulse-goal-card-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.impulse-goal-card-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: #F2E4D8;
+}
+
+.impulse-goal-offset {
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    bottom: -3px;
+    width: 7px;
+    border: 1px solid #CCB19E;
+    border-right: none;
+    border-radius: 7px 0 0 7px;
+}
+
+@keyframes shimmerMove {
+    0% { mask-position: 0 -120%; -webkit-mask-position: 0 -120%; }
+    100% { mask-position: 0 220%; -webkit-mask-position: 0 220%; }
+}
+
+.offset-glow {
+    mask-image: linear-gradient(to bottom, transparent, black, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black, transparent);
+    mask-size: 100% 260%;
+    -webkit-mask-size: 100% 260%;
+    animation: shimmerMove 7s linear infinite;
+}
+
+.impulse-divider-wrap {
+    padding: 56px 0;
+    background-color: #000000;
+}
+
+/* ---------- Para Quem (landing-operacao-impulse) ---------- */
+.paraquem {
+    position: relative;
+    overflow: hidden;
+    padding: 70px 5%;
+}
+
+.paraquem-bg {
+    position: absolute;
+    inset: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    z-index: 0;
+    background-image: url('../imagens-operacaoimpulse/opimpulse-secao3-praqueme-desktop.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.paraquem-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.paraquem-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #CCB19E;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.paraquem-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #F2E4D8;
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 720px;
+    margin-bottom: 40px;
+}
+
+.paraquem-text strong {
+    font-weight: 500;
+}
+
+.paraquem-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.paraquem-card {
+    background: #000000;
+    border-radius: 0;
+    border-top: 4px solid #323139;
+    border-bottom: 4px solid #323139;
+    border-left: 4px solid #7b4420;
+    border-right: 1px solid #323139;
+    padding: 18px 20px;
+}
+
+.paraquem-card-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.paraquem-card-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: #CCB19E;
+    font-size: 12px;
+}
+
+/* ---------- Impulse Result (landing-operacao-impulse) ---------- */
+.impulse-result {
+    background-color: #000000;
+    padding: 70px 5%;
+}
+
+.impulse-result-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.impulse-result-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 26px;
+    line-height: 1.3;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 24px;
+}
+
+.impulse-result-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #CCB19E;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: left;
+    max-width: 640px;
+    margin: 0 auto 20px;
+}
+
+.impulse-result-highlight {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: #F2E4D8;
+    font-size: 15px;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 48px;
+}
+
+.impulse-result-icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: 960px;
+    margin: 0 auto 48px;
+}
+
+.impulse-result-icon-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.impulse-result-icon-circle {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: #222222;
+    border: 1px dashed #7b4420;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #CCB19E;
+    margin-bottom: 14px;
+}
+
+.impulse-result-icon-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.impulse-result-icon-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.impulse-result-icon-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: #CCB19E;
+    font-size: 11px;
+}
+
+.impulse-result-cta {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* ---------- Por Dentro (landing-operacao-impulse) ---------- */
+.porDentro {
+    position: relative;
+    overflow: hidden;
+    padding: 70px 5%;
+}
+
+.porDentro-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-color: #FFFFFF;
+    /* IMAGEM DE FUNDO AQUI (notebook): substituir por
+       background-image: url('NOME-DO-ARQUIVO.png');
+       background-size: cover;
+       background-position: center; */
+}
+
+.porDentro-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.porDentro-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #111111;
+    font-size: 24px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+.porDentro-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #444444;
+    font-size: 13px;
+    line-height: 1.7;
+    max-width: 720px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+}
+
+.porDentro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 24px;
+}
+
+.porDentro-card {
+    position: relative;
+    background: #7b4420;
+    border-radius: 0;
+    border-left: 4px solid #000000;
+    border-right: 4px solid #000000;
+    border-top: 4px solid #000000;
+    border-bottom: 1px solid #000000;
+    padding: 24px 20px 18px;
+}
+
+.porDentro-badge {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #000000;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.porDentro-card-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.porDentro-card-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: #F2E4D8;
+    font-size: 12px;
+    text-align: center;
+}
+
+.porDentro-support {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 36px;
+    margin-left: 32vw;
+    border-left: 3px solid #3D2010;
+    padding: 24px 0 24px 20px;
+}
+
+.porDentro-support-line1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #111111;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.porDentro-support-line2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #444444;
+    font-size: 13px;
+    white-space: nowrap;
+    margin-top: 6px;
+}
+
+/* ---------- Resultados (landing-operacao-impulse) ---------- */
+.resultados {
+    position: relative;
+    overflow: hidden;
+    padding: 70px 5%;
+    min-height: 610px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.resultados-bg {
+    position: absolute;
+    inset: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    z-index: 0;
+    background-image: url('../imagens-operacaoimpulse/resultadosreais-operacaoimpulse-desktop.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.resultados-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.resultados-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 26px;
+    text-align: center;
+}
+
+.resultados-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: #CCB19E;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 6px;
+}
+
+/* ---------- Quem Te Guia (landing-operacao-impulse) ---------- */
+.quemteguia {
+    position: relative;
+    overflow: hidden;
+    min-height: 610px;
+}
+
+.quemteguia-bg {
+    position: absolute;
+    inset: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    z-index: 0;
+    background-image: url('../imagens-operacaoimpulse/quemethais-operacaoimpulse-desktop.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.quemteguia-inner {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1400px;
+    min-height: 610px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+.quemteguia-content {
+    max-width: 572px;
+    margin-left: 170px;
+    padding: 40px 6% 60px 40px;
+    text-align: left;
+}
+
+.quemteguia-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.quemteguia-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #F2E4D8;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.quemteguia-text:first-of-type {
+    margin-top: 80px;
+}
+
+.quemteguia-text strong {
+    font-weight: 500;
+}
+
+/* ---------- Preço / CTA Final (landing-operacao-impulse) ---------- */
+.preco {
+    position: relative;
+    overflow: hidden;
+    height: 334px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+    background-image: url('../imagens-operacaoimpulse/ctaepreco-operacaoimpulse-desktop.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.preco-title {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #111111;
+    font-size: 26px;
+    text-align: center;
+    padding: 0 5%;
+}
+
+.preco .tricologia-price-btn {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.preco .tricologia-price-btn:hover {
+    transform: translateX(-50%) translateY(-2px);
+}
+
+/* ---------- Impulse Final (landing-operacao-impulse) ---------- */
+.impulse-final {
+    position: relative;
+    overflow: hidden;
+    padding: 25px 5% 70px;
+}
+
+.impulse-final-bg {
+    position: absolute;
+    inset: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    z-index: 0;
+    background-image: url('../imagens-operacaoimpulse/paginafinal-operacaoimpulse-desktop.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.impulse-final-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.impulse-final-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 33px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.impulse-final-bubbles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.impulse-final-bubble {
+    background: #7b4420;
+    border: 1px solid #CCB19E;
+    border-radius: 16px 16px 16px 2px;
+    padding: 18px 20px;
+}
+
+.impulse-final-bubble p {
+    font-style: italic;
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.impulse-final-cta-block {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.impulse-final-connect {
+    font-family: 'Montserrat', sans-serif;
+    color: #CCB19E;
+    font-size: 18px;
+    text-align: center;
+}
+
+.impulse-final-offer {
+    margin-top: 80px;
+}
+
+.impulse-final-connect strong {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.impulse-final-highlight {
+    background: #F2E4D8;
+    border-radius: 8px;
+    padding: 20px 24px;
+    max-width: 560px;
+    margin: 0 auto 20px;
+}
+
+.impulse-final-highlight p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: #111111;
+    font-size: 19px;
+    text-align: center;
+}
+
+.impulse-final-support {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: #999999;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.impulse-final-btn {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+
+    .impulse-hero {
+        min-height: 54vh;
+    }
+
+    .impulse-hero-bg {
+        background-image: url('../imagens-operacaoimpulse/hero-operacaoimpulse-mobile.png');
+    }
+
+    .impulse-hero-inner {
+        min-height: 54vh;
+        justify-content: center;
+    }
+
+    .impulse-hero-content {
+        max-width: 100%;
+        padding-top: 200px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    .impulse-hero-title {
+        font-size: 1.5rem;
+    }
+
+    .impulse-hero-subtitle {
+        font-size: 1.15rem;
+    }
+
+    .impulse-hero-text {
+        margin: 0 auto 28px;
+        text-align: center;
+    }
+
+    .impulse-hero-cta {
+        margin: 0 auto;
+    }
+
+    .impulse-goals-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .impulse-goals-col-right {
+        justify-content: flex-start;
+    }
+
+    .paraquem-bg {
+        background-image: url('../imagens-operacaoimpulse/opimpulse-secao3-praqueme-mobile.png');
+    }
+
+    .paraquem-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .impulse-result-icons {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .porDentro-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .porDentro-support {
+        margin-left: 4vw;
+    }
+
+    .porDentro-support-line1,
+    .porDentro-support-line2 {
+        white-space: normal;
+    }
+
+    .quemteguia {
+        height: 728px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .quemteguia-bg {
+        background-image: url('../imagens-operacaoimpulse/quemethais-operacaoimpulse-mobile.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .quemteguia-inner {
+        position: absolute;
+        inset: 0;
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .quemteguia-content {
+        max-width: 90%;
+        margin-left: 0;
+        padding: 80px 24px 40px;
+    }
+
+    .quemteguia-text {
+        font-size: 14px;
+    }
+
+    .quemteguia-title {
+        font-size: 28px;
+    }
+
+    .preco {
+        background-image: url('../imagens-operacaoimpulse/ctaepreco-operacaoimpulse-mobile.png');
+    }
+
+    .preco-title-line1 {
+        font-size: 20px;
+        display: inline-block;
+    }
+
+    .impulse-final-bubbles {
+        grid-template-columns: 1fr;
+    }
+
+    .impulse-final-cta-block {
+        margin-top: 48px;
+    }
+
+    .resultados {
+        min-height: 400px;
+    }
+
+    .resultados-bg {
+        background-image: url('../imagens-operacaoimpulse/resultadosreais-operacaoimpulse-mobile.png');
+    }
+
+    .impulse-final-bg {
+        background-image: url('../imagens-operacaoimpulse/paginafinal-operacaoimpulse-mobile.png');
+    }
+}
